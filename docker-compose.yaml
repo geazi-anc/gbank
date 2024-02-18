@@ -2,9 +2,7 @@ version: "3.5"
 
 services:
   api01: &api
-    image: geazi-anc/gbank:latest
-    build: .
-    restart: always
+    image: geazianc/gbank:latest
     hostname: api01
     environment:
       - MONGO_URI=db
